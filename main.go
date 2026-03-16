@@ -26,12 +26,12 @@ func main() {
 
 	portString := os.Getenv("PORT")
 	if portString == "" {
-		log.Fatal("PORT not found in the enviroment.")
+		log.Fatal("PORT not found in the environment.")
 	}
 
 	dbURL := os.Getenv("DB_URL")
 	if portString == "" {
-		log.Fatal("DB_URL not found in the enviroment.")
+		log.Fatal("DB_URL not found in the environment.")
 	}
 
 	conn, err := sql.Open("postgres", dbURL)
